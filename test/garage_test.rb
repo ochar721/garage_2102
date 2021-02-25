@@ -16,7 +16,7 @@ class GarageTest < Minitest::Test
     owner_2.buy('1963 Green Chevrolet Corvette')
     owner_2.buy('2020 Silver Volvo XC90')
     assert_instance_of Garage, garage
-    assert_equal "Totally Safe Garage", garage.name
+    assert_equal "Totally Safe Parking", garage.name
     assert_equal [], garage.customers
   end
 
@@ -72,7 +72,7 @@ class GarageTest < Minitest::Test
       "Chevrolet" => [car_3],
       "Volvo" => [car_4]
        }
-       assert_equal expected, garage.cars_by_make
+    assert_equal expected, garage.cars_by_make
   end
 
   def test_it_has_oldest_cars
