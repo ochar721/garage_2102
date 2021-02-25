@@ -5,7 +5,7 @@ class CarTest < Minitest::Test
 
   def test_it_exists_and_has_attributes
     car_1 = Car.new({description: 'Green Ford Mustang', year: '1967'})
-    assert_equal Car, car_1
+    assert_instance_of Car, car_1
     assert_equal "Ford", car_1.make
     assert_equal "Mustang", car_1.model
     assert_equal "Green", car_1.color
