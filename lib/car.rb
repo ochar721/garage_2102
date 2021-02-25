@@ -13,6 +13,5 @@ class Car
 
   def age
     @current_year - @year.to_i
-
   end
 end
